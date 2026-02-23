@@ -1,10 +1,4 @@
-import Link from "next/link";
-import "./globals.css";
-
-export const metadata = {
-  title: "ViajaSmart",
-  description: "Plataforma tecnológica aplicada al turismo.",
-};
+import Script from "next/script";
 
 export default function RootLayout({
   children,
@@ -13,27 +7,26 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className="bg-black text-white">
-        <header className="border-b border-white/10 bg-black/80 backdrop-blur-md">
-          <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <body>
 
-            {/* Logo clickeable */}
-            <Link
-              href="/"
-              className="text-2xl font-bold tracking-tight"
-            >
-              Viaja<span className="text-cyan-400">Smart</span>
-            </Link>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-BJXX5DD3BC"
+          strategy="afterInteractive"
+        />
 
-            {/* Espacio reservado futuro */}
-            <div className="text-white/40 text-sm">
-              Cartagena
-            </div>
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'G-BJXX5DD3BC');
+          `}
+        </Script>
 
-          </div>
-        </header>
+        {children}
 
-        <main>{children}</main>
       </body>
     </html>
   );

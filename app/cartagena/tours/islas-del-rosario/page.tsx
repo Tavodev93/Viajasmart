@@ -9,7 +9,6 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-14">
-
       {/* HERO */}
       <section className="mb-16">
         <h1 className="text-4xl font-bold mb-6">
@@ -18,8 +17,9 @@ export default function Page() {
         </h1>
 
         <p className="text-gray-400 max-w-2xl leading-relaxed">
-          El tour a las Islas del Rosario es el plan más popular para quienes visitan Cartagena.
-          Playa, mar turquesa y día completo en el Caribe colombiano.
+          El tour a las Islas del Rosario es el plan más popular para quienes
+          visitan Cartagena. Playa, mar turquesa y día completo en el Caribe
+          colombiano.
         </p>
       </section>
 
@@ -30,16 +30,15 @@ export default function Page() {
         </h2>
 
         <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
-          <p className="text-lg mb-4">
-            Precio promedio en 2026:
-          </p>
+          <p className="text-lg mb-4">Precio promedio en 2026:</p>
 
           <p className="text-3xl font-bold text-cyan-400 mb-4">
             $120.000 – $180.000 COP
           </p>
 
           <p className="text-gray-400">
-            El precio depende del tipo de embarcación, playa incluida y servicios adicionales.
+            El precio depende del tipo de embarcación, playa incluida y
+            servicios adicionales.
           </p>
         </div>
       </section>
@@ -76,31 +75,25 @@ export default function Page() {
 
       {/* EXPERIENCIA */}
       <section className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6">
-          ¿Vale la pena el tour?
-        </h2>
+        <h2 className="text-2xl font-semibold mb-6">¿Vale la pena el tour?</h2>
 
         <p className="text-gray-300 leading-relaxed">
-          Sí, especialmente si quieres conocer el Caribe fuera de la ciudad.
-          Es una experiencia de día completo y uno de los planes más recomendados
+          Sí, especialmente si quieres conocer el Caribe fuera de la ciudad. Es
+          una experiencia de día completo y uno de los planes más recomendados
           para parejas, grupos de amigos y viajeros internacionales.
         </p>
       </section>
 
       {/* FAQ */}
       <section>
-        <h2 className="text-2xl font-semibold mb-6">
-          Preguntas frecuentes
-        </h2>
+        <h2 className="text-2xl font-semibold mb-6">Preguntas frecuentes</h2>
 
         <div className="space-y-6">
           <div>
             <h3 className="font-semibold text-lg mb-2">
               ¿Cuánto dura el tour?
             </h3>
-            <p className="text-gray-400">
-              Aproximadamente 7 a 8 horas.
-            </p>
+            <p className="text-gray-400">Aproximadamente 7 a 8 horas.</p>
           </div>
 
           <div>
@@ -108,7 +101,8 @@ export default function Page() {
               ¿Se puede ir por cuenta propia?
             </h3>
             <p className="text-gray-400">
-              Es posible, pero resulta más costoso y menos práctico que el tour organizado.
+              Es posible, pero resulta más costoso y menos práctico que el tour
+              organizado.
             </p>
           </div>
 
@@ -122,21 +116,40 @@ export default function Page() {
           </div>
         </div>
         <div className="mt-8 bg-cyan-500/10 border border-cyan-400/30 rounded-2xl p-8 text-center">
-  <h3 className="text-2xl font-bold mb-4">
-    Reserva el Tour Mejor Valorado
-  </h3>
-  <p className="text-gray-300 mb-6">
-    Precio fijo confirmado. Cancelación gratuita.
-  </p>
-  <a
-    href="#"
-    className="inline-block bg-cyan-400 text-black font-semibold px-8 py-3 rounded-xl hover:bg-cyan-300 transition"
-  >
-    Ver disponibilidad →
-  </a>
-</div>
+          <h3 className="text-2xl font-bold mb-4">
+            Reserva el Tour Mejor Valorado
+          </h3>
+          <p className="text-gray-300 mb-6">
+            Precio fijo confirmado. Cancelación gratuita.
+          </p>
+          <a
+            className="inline-block bg-cyan-400 text-black font-semibold px-8 py-3 rounded-xl hover:bg-cyan-300 transition"
+            href="https://www.getyourguide.es/bolivar-l578/cartagena-5-puntos-destacados-de-las-islas-del-rosario-con-almuerzo-t497946/"
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+          >
+            Ver disponibilidad →
+          </a>
+        </div>
       </section>
+      <section className="mt-20 text-center">
+        <h2 className="text-2xl font-semibold mb-4">
+          ¿Listo para visitar las Islas del Rosario?
+        </h2>
 
+        <p className="text-gray-400 mb-6">
+          Consulta disponibilidad actualizada y precios oficiales.
+        </p>
+
+        <a
+          href="https://www.getyourguide.es/bolivar-l578/cartagena-5-puntos-destacados-de-las-islas-del-rosario-con-almuerzo-t497946/"
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="inline-block bg-cyan-400 text-black font-semibold px-8 py-4 rounded-xl hover:bg-cyan-300 transition"
+        >
+          Reservar tour ahora →
+        </a>
+      </section>
     </main>
   );
 }
