@@ -1,83 +1,113 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <section className="relative flex flex-col items-center justify-center text-center px-6">
+    <main className="max-w-5xl mx-auto px-6 py-16">
 
-      {/* Background Glow */}
-      <div className="absolute top-40 w-[500px] h-[500px] bg-cyan-500/20 blur-[120px] rounded-full -z-10"></div>
-
-      {/* Hero */}
-      <div className="max-w-4xl mx-auto space-y-8">
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-          Travel smarter.
-          <br />
-          <span className="text-cyan-400">Pay fair.</span>
+      {/* HERO */}
+      <section className="mb-20 text-center">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          Guía Inteligente para Viajar a
+          <span className="text-cyan-400"> Cartagena</span>
         </h1>
 
-        <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto">
-          Verifica precios en segundos, evita sobrecostos y planifica tu viaje
-          con inteligencia.
+        <p className="text-gray-400 max-w-2xl mx-auto leading-relaxed">
+          Recomendaciones reales sobre tours, precios y experiencias
+          para aprovechar tu viaje a Cartagena sin perder tiempo ni dinero.
         </p>
 
-        <div className="flex flex-col md:flex-row gap-4 justify-center items-center mt-6">
-          <button className="bg-cyan-500 hover:bg-cyan-400 text-black font-semibold px-8 py-3 rounded-xl transition w-full md:w-auto">
-            🔎 Verificar precio
-          </button>
-
-          <button className="border border-white/20 hover:border-cyan-400 hover:text-cyan-400 px-8 py-3 rounded-xl transition w-full md:w-auto">
-            🤖 Hablar con Travel Sensei
-          </button>
+        <div className="mt-8">
+          <Link
+            href="/cartagena/tours"
+            className="inline-block bg-cyan-400 text-black font-semibold px-8 py-4 rounded-xl hover:bg-cyan-300 transition"
+          >
+            Ver Mejores Tours →
+          </Link>
         </div>
-      </div>
+      </section>
 
-      {/* Features Section */}
-      <div className="grid md:grid-cols-3 gap-8 mt-24 max-w-6xl mx-auto">
-        <div className="border border-white/10 p-6 rounded-2xl backdrop-blur-md bg-white/5 hover:border-cyan-400 transition">
-          <h3 className="text-xl font-semibold mb-3 text-cyan-400">
-            Verificador Inteligente
-          </h3>
-          <p className="text-white/60 text-sm">
-            Compara precios reales y detecta posibles sobrecostos antes de pagar.
-          </p>
-        </div>
-
-        <div className="border border-white/10 p-6 rounded-2xl backdrop-blur-md bg-white/5 hover:border-cyan-400 transition">
-          <h3 className="text-xl font-semibold mb-3 text-cyan-400">
-            Planificación Personalizada
-          </h3>
-          <p className="text-white/60 text-sm">
-            Organiza tu viaje según tus días, intereses y presupuesto.
-          </p>
-        </div>
-
-        <div className="border border-white/10 p-6 rounded-2xl backdrop-blur-md bg-white/5 hover:border-cyan-400 transition">
-          <h3 className="text-xl font-semibold mb-3 text-cyan-400">
-            Travel Sensei AI
-          </h3>
-          <p className="text-white/60 text-sm">
-            Recomendaciones inteligentes de actividades, hoteles y restaurantes.
-          </p>
-        </div>
-      </div>
-
-      {/* Destination Selector */}
-      <div className="mt-28 text-center space-y-6">
-        <h2 className="text-2xl md:text-3xl font-semibold">
-          ¿A qué destino viajas?
+      {/* SECCIÓN DESTACADA */}
+      <section className="mb-20">
+        <h2 className="text-2xl font-semibold mb-8">
+          Experiencias Imperdibles en Cartagena
         </h2>
 
-        <div className="flex justify-center gap-6 flex-wrap">
-          <a
-            href="/cartagena"
-            className="border border-white/10 px-6 py-3 rounded-xl hover:border-cyan-400 hover:text-cyan-400 transition"
-          >
-            Cartagena
-          </a>
+        <div className="grid md:grid-cols-2 gap-8">
 
-          <span className="border border-white/10 px-6 py-3 rounded-xl text-white/40">
-            Próximamente más destinos
-          </span>
+          <Link
+            href="/cartagena/tours/islas-del-rosario"
+            className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-cyan-400 transition"
+          >
+            <h3 className="text-xl font-semibold mb-3">
+              Islas del Rosario
+            </h3>
+            <p className="text-gray-400 mb-4">
+              El tour más popular desde Cartagena. Playa, mar turquesa y día completo en el Caribe.
+            </p>
+            <span className="text-sm text-gray-500">
+              Ver precios y detalles →
+            </span>
+          </Link>
+
+          <Link
+            href="/cartagena/tours/city-tour"
+            className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-cyan-400 transition"
+          >
+            <h3 className="text-xl font-semibold mb-3">
+              City Tour Cartagena
+            </h3>
+            <p className="text-gray-400 mb-4">
+              Recorre el Centro Histórico, Getsemaní y los puntos más icónicos.
+            </p>
+            <span className="text-sm text-gray-500">
+              Explorar →
+            </span>
+          </Link>
+
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* GUÍA PRÁCTICA */}
+      <section className="mb-20">
+        <h2 className="text-2xl font-semibold mb-6">
+          Información Útil para Tu Llegada
+        </h2>
+
+        <div className="space-y-4">
+          <Link
+            href="/cartagena/precio-taxi-aeropuerto"
+            className="block bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-cyan-400 transition"
+          >
+            Precio Taxi Aeropuerto Cartagena →
+          </Link>
+
+          <Link
+            href="/cartagena/tours"
+            className="block bg-zinc-900 border border-zinc-800 rounded-xl p-6 hover:border-cyan-400 transition"
+          >
+            Todos los Tours en Cartagena →
+          </Link>
+        </div>
+      </section>
+
+      {/* CTA FINAL */}
+      <section className="text-center mt-24">
+        <h2 className="text-2xl font-semibold mb-4">
+          Planea mejor tu viaje a Cartagena
+        </h2>
+
+        <p className="text-gray-400 mb-8">
+          Encuentra recomendaciones claras, precios actualizados y las mejores experiencias.
+        </p>
+
+        <Link
+          href="/cartagena/tours/islas-del-rosario"
+          className="inline-block bg-cyan-400 text-black font-semibold px-8 py-4 rounded-xl hover:bg-cyan-300 transition"
+        >
+          Ver Tour a Islas del Rosario →
+        </Link>
+      </section>
+
+    </main>
   );
 }
