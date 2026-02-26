@@ -123,10 +123,18 @@ export default function Page() {
             Precio fijo confirmado. Cancelación gratuita.
           </p>
           <a
-            className="inline-block bg-cyan-400 text-black font-semibold px-8 py-3 rounded-xl hover:bg-cyan-300 transition"
             href="https://www.getyourguide.es/bolivar-l578/cartagena-5-puntos-destacados-de-las-islas-del-rosario-con-almuerzo-t497946/"
             target="_blank"
             rel="noopener noreferrer sponsored"
+            onClick={() => {
+                if (typeof window !== "undefined" && window.gtag) {
+                    window.gtag("event", "click_islas_rosario", {
+                        event_category: "affiliate",
+                        event_label: "boton_principal",
+                    });
+                }
+            }}
+            className="inline-block bg-cyan-400 text-black font-semibold px-8 py-3 rounded-xl hover:bg-cyan-300 transition"
           >
             Ver disponibilidad →
           </a>
