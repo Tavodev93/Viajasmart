@@ -9,20 +9,15 @@ export const metadata = {
 export default function ChivaRumbera() {
   return (
     <main className="max-w-5xl mx-auto px-6 py-16">
-
-      <h1 className="text-4xl font-bold mb-6">
-        Chiva Rumbera en Cartagena
-      </h1>
+      <h1 className="text-4xl font-bold mb-6">Chiva Rumbera en Cartagena</h1>
 
       <p className="text-gray-400 mb-12 max-w-3xl">
-        La Chiva Rumbera es uno de los tours nocturnos más populares.
-        Música, baile y recorrido por puntos icónicos de Cartagena.
+        La Chiva Rumbera es uno de los tours nocturnos más populares. Música,
+        baile y recorrido por puntos icónicos de Cartagena.
       </p>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">
-          ¿Qué incluye?
-        </h2>
+        <h2 className="text-2xl font-semibold mb-4">¿Qué incluye?</h2>
         <ul className="space-y-3 text-gray-400">
           <li>• Recorrido en bus típico decorado</li>
           <li>• Música en vivo o DJ</li>
@@ -31,12 +26,10 @@ export default function ChivaRumbera() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">
-          Precio aproximado
-        </h2>
+        <h2 className="text-2xl font-semibold mb-4">Precio aproximado</h2>
         <p className="text-gray-400">
-          El precio suele estar entre $70.000 y $120.000 COP dependiendo
-          del operador.
+          El precio suele estar entre $70.000 y $120.000 COP dependiendo del
+          operador.
         </p>
       </section>
 
@@ -49,6 +42,14 @@ export default function ChivaRumbera() {
         </Link>
       </section>
 
+      <section className="mt-6 text-center">
+        <Link
+          href="/cartagena/tours"
+          className="text-gray-400 hover:text-cyan-400 transition"
+        >
+          Ver todos los tours →
+        </Link>
+      </section>
     </main>
   );
 }

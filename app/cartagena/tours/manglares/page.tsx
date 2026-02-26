@@ -9,7 +9,6 @@ export const metadata = {
 export default function Manglares() {
   return (
     <main className="max-w-5xl mx-auto px-6 py-16">
-
       <h1 className="text-4xl font-bold mb-6">
         Tour por los Manglares en Cartagena
       </h1>
@@ -20,9 +19,7 @@ export default function Manglares() {
       </p>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">
-          ¿Qué incluye?
-        </h2>
+        <h2 className="text-2xl font-semibold mb-4">¿Qué incluye?</h2>
         <ul className="space-y-3 text-gray-400">
           <li>• Recorrido en canoa o lancha</li>
           <li>• Guía local</li>
@@ -31,12 +28,10 @@ export default function Manglares() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">
-          Precio aproximado
-        </h2>
+        <h2 className="text-2xl font-semibold mb-4">Precio aproximado</h2>
         <p className="text-gray-400">
-          El costo suele variar entre $70.000 y $130.000 COP según duración
-          y tipo de recorrido.
+          El costo suele variar entre $70.000 y $130.000 COP según duración y
+          tipo de recorrido.
         </p>
       </section>
 
@@ -49,6 +44,14 @@ export default function Manglares() {
         </Link>
       </section>
 
+      <section className="mt-6 text-center">
+        <Link
+          href="/cartagena/tours"
+          className="text-gray-400 hover:text-cyan-400 transition"
+        >
+          Ver todos los tours →
+        </Link>
+      </section>
     </main>
   );
 }

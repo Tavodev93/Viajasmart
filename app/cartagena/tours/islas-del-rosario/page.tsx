@@ -124,7 +124,7 @@ export default function Page() {
             Precio fijo confirmado. Cancelación gratuita.
           </p>
           <AffiliateButton
-            href="TU_LINK_AFILIADO"
+            href="https://www.getyourguide.es/bolivar-l578/cartagena-5-puntos-destacados-de-las-islas-del-rosario-con-almuerzo-t497946/"
             label="Ver disponibilidad →"
           />
         </div>
