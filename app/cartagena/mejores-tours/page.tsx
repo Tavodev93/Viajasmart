@@ -71,6 +71,38 @@ export default function MejoresTours() {
         </Link>
       </section>
 
+            {/* Manglares */}
+      <section className="mb-16 bg-zinc-900 border border-zinc-800 rounded-2xl p-8">
+        <h2 className="text-2xl font-semibold mb-4">
+          4. Manglares en La Boquilla
+        </h2>
+        <p className="text-gray-400 mb-4">
+          Experiencia ecológica tranquila ideal para quienes buscan naturaleza.
+        </p>
+        <Link
+          href="/cartagena/tours/manglares"
+          className="text-cyan-400 hover:underline"
+        >
+          Ver detalles →
+        </Link>
+      </section>
+
+      {/* Chiva */}
+      <section className="mb-16 bg-zinc-900 border border-zinc-800 rounded-2xl p-8">
+        <h2 className="text-2xl font-semibold mb-4">
+          5. Chiva Rumbera
+        </h2>
+        <p className="text-gray-400 mb-4">
+          Tour nocturno festivo por los puntos más icónicos de la ciudad.
+        </p>
+        <Link
+          href="/cartagena/tours/chiva-rumbera"
+          className="text-cyan-400 hover:underline"
+        >
+          Explorar →
+        </Link>
+      </section>
+
       {/* CTA final */}
       <section className="text-center mt-20">
         <h2 className="text-2xl font-semibold mb-4">
