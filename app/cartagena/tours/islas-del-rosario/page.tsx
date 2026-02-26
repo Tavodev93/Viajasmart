@@ -1,5 +1,4 @@
-"use client";
-
+import AffiliateButton from "@/app/components/AffiliateButton";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -124,22 +123,10 @@ export default function Page() {
           <p className="text-gray-300 mb-6">
             Precio fijo confirmado. Cancelación gratuita.
           </p>
-          <a
-            href="https://www.getyourguide.es/bolivar-l578/cartagena-5-puntos-destacados-de-las-islas-del-rosario-con-almuerzo-t497946/"
-            target="_blank"
-            rel="noopener noreferrer sponsored"
-            onClick={() => {
-                if (typeof window !== "undefined" && window.gtag) {
-                    window.gtag("event", "click_islas_rosario", {
-                        event_category: "affiliate",
-                        event_label: "boton_principal",
-                    });
-                }
-            }}
-            className="inline-block bg-cyan-400 text-black font-semibold px-8 py-3 rounded-xl hover:bg-cyan-300 transition"
-          >
-            Ver disponibilidad →
-          </a>
+          <AffiliateButton
+            href="TU_LINK_AFILIADO"
+            label="Ver disponibilidad →"
+          />
         </div>
       </section>
       <section className="mt-20 text-center">
