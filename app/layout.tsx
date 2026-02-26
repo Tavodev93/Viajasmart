@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "ViajaSmart | Guía Inteligente para Cartagena",
   description:
     "Recomendaciones reales de tours, precios y experiencias para viajar a Cartagena sin sobrecostos.",
+  verification: {
+    google: "CtkMU7PQSkz69x_dRA-",
+  },
 };
 
 export default function RootLayout({
