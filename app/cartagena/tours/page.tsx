@@ -48,7 +48,6 @@ const tours = [
 export default function Page() {
   return (
     <main className="max-w-5xl mx-auto px-6 py-14">
-
       {/* HERO */}
       <section className="mb-16">
         <h1 className="text-4xl font-bold mb-6">
@@ -56,8 +55,9 @@ export default function Page() {
         </h1>
 
         <p className="text-gray-400 max-w-2xl leading-relaxed">
-          Cartagena ofrece muchas experiencias, pero no todos los tours valen la pena.
-          Aquí encontrarás los planes más recomendados para aprovechar tu viaje al máximo.
+          Cartagena ofrece muchas experiencias, pero no todos los tours valen la
+          pena. Aquí encontrarás los planes más recomendados para aprovechar tu
+          viaje al máximo.
         </p>
       </section>
 
@@ -69,25 +69,26 @@ export default function Page() {
             href={tour.href}
             className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-cyan-400 transition"
           >
-            <h2 className="text-xl font-semibold mb-3">
-              {tour.title}
-            </h2>
+            <h2 className="text-xl font-semibold mb-3">{tour.title}</h2>
 
-            <p className="text-gray-400 mb-4">
-              {tour.description}
-            </p>
+            <p className="text-gray-400 mb-4">{tour.description}</p>
 
-            <p className="text-cyan-400 font-semibold mb-4">
-              {tour.price}
-            </p>
+            <p className="text-cyan-400 font-semibold mb-4">{tour.price}</p>
 
-            <span className="text-sm text-gray-500">
-              Ver detalles →
-            </span>
+            <span className="text-sm text-gray-500">Ver detalles →</span>
           </Link>
         ))}
       </section>
 
+      <section className="mt-20 text-center">
+        <h2 className="text-2xl font-semibold mb-4">¿No sabes cuál elegir?</h2>
+        <Link
+          href="/cartagena/mejores-tours"
+          className="inline-block bg-cyan-400 text-black font-semibold px-8 py-4 rounded-xl hover:bg-cyan-300 transition"
+        >
+          Ver comparativa completa →
+        </Link>
+      </section>
     </main>
   );
 }
