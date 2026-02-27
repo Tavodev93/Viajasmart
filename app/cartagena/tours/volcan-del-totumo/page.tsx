@@ -47,7 +47,7 @@ export default function VolcanDelTotumo() {
 
       <div className="mt-16 text-center">
         <AffiliateButton
-          href="https://www.getyourguide.es/cartagena-de-indias-l362/ecoturismo-y-pesca-en-el-manglar-natural-de-cartagena-t613520/?partner_id=C5W2W5Y&utm_medium=online_publisher"
+          href="https://www.getyourguide.es/cartagena-de-indias-l362/cartagena-experiencia-en-el-volcan-de-barro-del-totumo-t323228/?partner_id=C5W2W5Y&utm_medium=online_publisher"
           label="Ver disponibilidad Manglares →"
           eventName="click_manglares"
         />
