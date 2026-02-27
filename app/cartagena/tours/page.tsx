@@ -86,7 +86,7 @@ export default function Page() {
           href="/cartagena/mejores-tours"
           className="inline-block bg-cyan-400 text-black font-semibold px-8 py-4 rounded-xl hover:bg-cyan-300 transition"
         >
-          Ver comparativa 
+          Ver comparativa completa →
         </Link>
       </section>
     </main>
