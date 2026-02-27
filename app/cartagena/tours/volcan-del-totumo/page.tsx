@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AffiliateButton from "@/app/components/AffiliateButton";
 
 export const metadata = {
   title: "Volcán del Totumo 2026 | Precio, Qué Incluye y Consejos",
@@ -43,6 +44,14 @@ export default function VolcanDelTotumo() {
           <li>• Llevar efectivo para propinas</li>
         </ul>
       </section>
+
+      <div className="mt-16 text-center">
+        <AffiliateButton
+          href="https://www.getyourguide.es/cartagena-de-indias-l362/ecoturismo-y-pesca-en-el-manglar-natural-de-cartagena-t613520/?partner_id=C5W2W5Y&utm_medium=online_publisher"
+          label="Ver disponibilidad Manglares →"
+          eventName="click_manglares"
+        />
+      </div>
 
       <section className="mt-16 text-center">
         <Link

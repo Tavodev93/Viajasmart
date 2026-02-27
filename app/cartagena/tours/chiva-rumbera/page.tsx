@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AffiliateButton from "@/app/components/AffiliateButton";
 
 export const metadata = {
   title: "Chiva Rumbera en Cartagena 2026 | Precio y Qué Esperar",
@@ -32,6 +33,14 @@ export default function ChivaRumbera() {
           operador.
         </p>
       </section>
+
+      <div className="mt-16 text-center">
+        <AffiliateButton
+          href="https://www.getyourguide.es/cartagena-de-indias-l362/tour-en-chiva-rumbera-con-musica-fiesta-y-diversion-en-cartagena-t1010149/?partner_id=C5W2W5Y&utm_medium=online_publisher"
+          label="Ver disponibilidad Chiva Rumbera →"
+          eventName="click_chiva_rumbera"
+        />
+      </div>
 
       <section className="mt-16 text-center">
         <Link

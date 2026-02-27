@@ -124,9 +124,8 @@ export default function Page() {
             Precio fijo confirmado. Cancelación gratuita.
           </p>
           <AffiliateButton
-            href="https://www.getyourguide.es/bolivar-l578/cartagena-5-puntos-destacados-de-las-islas-del-rosario-con-almuerzo-t497946/"
-            label="Ver disponibilidad →"
-          />
+            href="https://www.getyourguide.es/bolivar-l578/cartagena-5-puntos-destacados-de-las-islas-del-rosario-con-almuerzo-t497946/?partner_id=C5W2W5Y&utm_medium=online_publisher"
+            label="Ver disponibilidad →" eventName={""}          />
         </div>
       </section>
       <section className="mt-20 text-center">
@@ -139,7 +138,7 @@ export default function Page() {
         </p>
 
         <a
-          href="https://www.getyourguide.es/bolivar-l578/cartagena-5-puntos-destacados-de-las-islas-del-rosario-con-almuerzo-t497946/"
+          href="https://www.getyourguide.es/bolivar-l578/cartagena-5-puntos-destacados-de-las-islas-del-rosario-con-almuerzo-t497946/?partner_id=C5W2W5Y&utm_medium=online_publisher"
           target="_blank"
           rel="noopener noreferrer sponsored"
           className="inline-block bg-cyan-400 text-black font-semibold px-8 py-4 rounded-xl hover:bg-cyan-300 transition"

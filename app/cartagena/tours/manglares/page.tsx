@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AffiliateButton from "@/app/components/AffiliateButton";
 
 export const metadata = {
   title: "Tour por los Manglares en Cartagena 2026 | Precio y Experiencia",
@@ -34,6 +35,14 @@ export default function Manglares() {
           tipo de recorrido.
         </p>
       </section>
+
+      <div className="mt-16 text-center">
+        <AffiliateButton
+          href="https://www.getyourguide.es/cartagena-de-indias-l362/ecoturismo-y-pesca-en-el-manglar-natural-de-cartagena-t613520/?partner_id=C5W2W5Y&utm_medium=online_publisher"
+          label="Ver disponibilidad Manglares →"
+          eventName="click_manglares"
+        />
+      </div>
 
       <section className="mt-16 text-center">
         <Link

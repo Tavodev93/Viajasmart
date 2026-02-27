@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AffiliateButton from "@/app/components/AffiliateButton";
 
 export const metadata = {
   title: "City Tour Cartagena 2026 | Precio y Qué Incluye",
@@ -61,6 +62,11 @@ export default function CityTour() {
           Ver todos los tours →
         </Link>
       </section>
+      <AffiliateButton
+  href="https://www.getyourguide.es/cartagena-de-indias-l362/visita-compartida-a-pie-cartagena-centro-historico-y-getsemani-t453794/?partner_id=C5W2W5Y&utm_medium=online_publisher"
+  label="Ver disponibilidad City Tour →"
+  eventName="click_city_tour"
+/>
     </main>
   );
 }
